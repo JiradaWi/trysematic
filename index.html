@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>TrySematic</title>
-    <link rel="stylesheet" type="text/css" href="sematic/semantic.css">
-  </head>
-  <body>
-    <div class="ui left sidebar demo vertical labeled inverted icon uncover menu visible">
-      <div class="item">
-    <div class="ui header inverted" style="text-align:center">
-      <img src="https://media.wmagazine.com/photos/5a54fb18cc710f7693fb8f32/4:3/w_1536/kylie-jenner-potentially-revealing-pregnancy-on-kuwtk-lead.jpg"
-      style="width:50pt;border-radius:100%"><br>
-      Kylie Jenner
+<head>
+  <meta charset="utf-8">
+  <title>TrySematic</title>
+  <link rel="stylesheet" type="text/css" href="sematic/semantic.css">
+</head>
+<body>
+  <div class="ui left sidebar demo vertical labeled inverted icon uncover menu visible">
+    <div class="item">
+      <div class="ui header inverted" style="text-align:center">
+        <img src="https://media.wmagazine.com/photos/5a54fb18cc710f7693fb8f32/4:3/w_1536/kylie-jenner-potentially-revealing-pregnancy-on-kuwtk-lead.jpg"
+        style="width:50pt;border-radius:100%"><br>
+        Kylie Jenner
+      </div>
     </div>
-</div>
-
-
     <a class="item">
       <i class="home icon"></i>
       Home
@@ -38,12 +36,52 @@
     </a>
   </div>
 
-    <script src="sematic/semantic.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-    crossorigin="anonymous"></script>
-    <script>
 
-    </script>
-  </body>
+
+  <div class="pusher">
+    <button class="ui grey basic button" id="menuTog">Menu</button>
+    <h1>Projects</h1>
+    <div class="ui card">
+      <div class="image">
+        <img src="/images/avatar2/large/kristy.png">
+      </div>
+      <div class="content">
+        <a class="header">Kristy</a>
+        <div class="meta">
+          <span class="date">Joined in 2013</span>
+        </div>
+        <div class="description">
+          Kristy is an art director living in New York.
+        </div>
+      </div>
+      <div class="extra content">
+        <a>
+          <i class="user icon"></i>
+          22 Friends
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="sematic/semantic.js"></script>
+
+  <script>
+  $(document).ready(function(){
+    $("#menuTog").click(function(){
+      $('.ui.labeled.icon.sidebar')
+      .sidebar('toggle')
+      ;
+    });
+  });
+
+
+
+
+  
+
+  </script>
+</body>
 </html>
