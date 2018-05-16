@@ -46,87 +46,121 @@
   <div class="pusher">
     <button class="ui black button launch right attached fixed" id="menuTog">Menu</button>
     <div style="padding:2%">
-      <h1>Projects</h1>
-      <div class="ui link cards">
+      <h1>Menu</h1>
+
+      <div class="ui special cards">
 
         <div class="card">
-          <div class="image">
+          <div class="image blurring dimmable">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="ui inverted button">Home</div>
+                </div>
+              </div>
+            </div>
             <img src="img/sarms.gif">
           </div>
           <div class="content">
             <div class="header">
-              SARMS
+              Home
             </div>
             <div class="meta">
-              Software Assets Resource Management System
+              Main Menu
             </div>
-            <div class="description">
-              3 Projects in progress...
-            </div>
-          </div>
-          <div class="extra content">
-            Nearest Deadline: 30/05/2018
+
           </div>
         </div>
 
         <div class="card">
-          <div class="image">
-            <img src="img/ses.gif">
+          <div class="image blurring dimmable">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="ui inverted button">Projects</div>
+                </div>
+              </div>
+            </div>
+            <img src="img/sarms.gif">
           </div>
           <div class="content">
             <div class="header">
-              SES
+              Projects
             </div>
             <div class="meta">
-              What does SES stand for?
+              All Projects
             </div>
-            <div class="description">
-              7 Projects in progress...
-            </div>
-          </div>
-          <div class="extra content">
-            Nearest Deadline: 19/05/2018
+
           </div>
         </div>
 
         <div class="card">
-          <div class="image">
-            <img src="img/axcis.gif">
+          <div class="image blurring dimmable">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="ui inverted button">Members</div>
+                </div>
+              </div>
+            </div>
+            <img src="img/sarms.gif">
           </div>
           <div class="content">
             <div class="header">
-              AXCIS
+              Members
             </div>
             <div class="meta">
-              What does AXCIS stand for?
+              All Members
             </div>
-            <div class="description">
-              2 Projects in progress...
-            </div>
-          </div>
-          <div class="extra content">
-            Nearest Deadline: 19/05/2018
+
           </div>
         </div>
 
         <div class="card">
-          <div class="image">
-            <img src="img/add.gif">
+          <div class="image blurring dimmable">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="ui inverted button">Quotation</div>
+                </div>
+              </div>
+            </div>
+            <img src="img/sarms.gif">
           </div>
           <div class="content">
             <div class="header">
-              Add Projects
+              Quotation
+            </div>
+            <div class="meta">
+              MONEY~!!!
             </div>
 
-            <div class="description">
-              Add Here
-            </div>
           </div>
+        </div>
+        <div class="card">
+          <div class="image blurring dimmable">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="ui inverted button">Logout</div>
+                </div>
+              </div>
+            </div>
+            <img src="img/sarms.gif">
+          </div>
+          <div class="content">
+            <div class="header">
+              Logout
+            </div>
+            <div class="meta">
+              C u sn!
+            </div>
 
+          </div>
         </div>
 
+      </div>
     </div>
-  </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -140,6 +174,10 @@
       $('.ui.labeled.icon.sidebar')
       .sidebar('toggle')
       ;
+    });
+
+    $('.special.cards .image').dimmer({
+      on: 'hover'
     });
   });
 
